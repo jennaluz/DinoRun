@@ -1,6 +1,0 @@
-//this is just a sample of push and pull to git
-jenna's addition
-
-Merge conflicts test - Al
-
-jenna's line of code

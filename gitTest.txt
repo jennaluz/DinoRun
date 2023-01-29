@@ -1,4 +1,0 @@
-Git Test
-Second Test
-
-Testing merge conflicts
