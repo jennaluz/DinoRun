@@ -1,9 +1,6 @@
 //this is just a sample of push and pull to git
 jenna's addition
 
-<<<<<<< HEAD
-=======
 Merge conflicts test - Al
 
 jenna's line of code
->>>>>>> ba71e0996a6bb6c930edf69e359b1ab185c9c802
