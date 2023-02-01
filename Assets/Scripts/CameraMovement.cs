@@ -25,7 +25,11 @@ public class CameraMovement : MonoBehaviour
         else if(Input.GetKey(moveLeft)){
             cameraPosition.x += -cameraSpeed;
         }*/
-        cameraPosition.x += cameraSpeed;
+        if(cameraPosition.x >= 95){
+            cameraPosition.y += -cameraSpeed;
+        }else{
+            cameraPosition.x += cameraSpeed;
+        }
         mainCamera.gameObject.transform.position = cameraPosition;
     }
 }
