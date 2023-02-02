@@ -26,9 +26,9 @@ public class CameraMovement : MonoBehaviour
             cameraPosition.x += -cameraSpeed;
         }*/
         if(cameraPosition.x >= 95){
-            cameraPosition.y += -cameraSpeed;
+            cameraPosition.y += -cameraSpeed * Time.deltaTime;
         }else{
-            cameraPosition.x += cameraSpeed;
+            cameraPosition.x += cameraSpeed * Time.deltaTime;
         }
         mainCamera.gameObject.transform.position = cameraPosition;
     }
