@@ -9,7 +9,7 @@ public class TestPlayerMovement : MonoBehaviour
     public KeyCode moveLeft = KeyCode.A;
 
     public float speed = 10.0f;
-    private Rigidbody2D testPlayer;
+    protected Rigidbody2D testPlayer;
 
     // Start is called before the first frame update
     void Start()
