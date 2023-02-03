@@ -25,7 +25,10 @@ public class CameraMovement : MonoBehaviour
         else if(Input.GetKey(moveLeft)){
             cameraPosition.x += -cameraSpeed;
         }*/
-        if(cameraPosition.x >= 95){
+        if(cameraPosition.x <= 95){
+            cameraPosition.x += cameraSpeed * Time.deltaTime;
+        }
+        if(cameraPosition.x >= 95 && cameraPosition.y >= -34){
             cameraPosition.y += -cameraSpeed * Time.deltaTime;
         }else{
             cameraPosition.x += cameraSpeed * Time.deltaTime;

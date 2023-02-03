@@ -8,7 +8,7 @@ public class MovePlatform_x_axis : MonoBehaviour
     public float rightBoundary = 0;
     public float platformSpeed = 1;
 
-    private bool movingRight = true;
+    public bool startMovingRight = true;
     // Start is called before the first frame update
     void Start()
     {
@@ -25,11 +25,11 @@ public class MovePlatform_x_axis : MonoBehaviour
             platformPosition.x = -platformSpeed * Time.deltaTime;
         }*/
         if(platformPosition.x >= rightBoundary){
-            movingRight = false;                        
+            startMovingRight = false;                        
         }else if(platformPosition.x <= leftBoundary){
-            movingRight = true;
+            startMovingRight = true;
         }
-        if(movingRight){
+        if(startMovingRight){
             platformPosition.x += platformSpeed * Time.deltaTime;
         }else{
             platformPosition.x += -1 * platformSpeed * Time.deltaTime; //If the platform is moving left, then the movement needs to be negative
