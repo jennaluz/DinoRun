@@ -36,6 +36,7 @@ public class DinosaurMovement : MonoBehaviour
         }
 
         if (Input.GetKey(KeyCode.UpArrow)) {
+            dinoAnimate.SetBool("isJumping", true);
             transform.position = transform.position + (Vector3.up * dinoVerticalSpeed) * Time.deltaTime;
         }
         
@@ -47,10 +48,10 @@ public class DinosaurMovement : MonoBehaviour
     void OnCollisionEnter2D(Collision2D collision)
     {
         dinoAnimate.SetBool("isJumping", false);
-    }
 
-    void OnCollisionExit2D(Collision2D collision)
-    {
-        dinoAnimate.SetBool("isJumping", true);
+        if (collision.collider.tag == "Gameover") {
+           dinoAnimate.SetBool("isDying", true); 
+           Debug.Log("fell");
+        }
     }
 }
