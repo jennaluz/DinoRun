@@ -17,7 +17,7 @@ public class DinosaurMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(KeyCode.RightArrow)) {
+        if (Input.GetKey(KeyCode.D)) {
             if (dinoSprite.flipX) {
                 dinoSprite.flipX = false;
             }
@@ -26,7 +26,7 @@ public class DinosaurMovement : MonoBehaviour
             transform.position = transform.position + (Vector3.right * dinoHorizontalSpeed) * Time.deltaTime;
         }
 
-        if (Input.GetKey(KeyCode.LeftArrow)) {
+        if (Input.GetKey(KeyCode.A)) {
             if (!dinoSprite.flipX) {
                 dinoSprite.flipX = true;
             }
@@ -35,12 +35,12 @@ public class DinosaurMovement : MonoBehaviour
             transform.position = transform.position + (Vector3.left * dinoHorizontalSpeed) * Time.deltaTime;
         }
 
-        if (Input.GetKey(KeyCode.UpArrow)) {
+        if (Input.GetKey(KeyCode.Space)) {
             dinoAnimate.SetBool("isJumping", true);
             transform.position = transform.position + (Vector3.up * dinoVerticalSpeed) * Time.deltaTime;
         }
         
-        if (Input.GetKeyUp(KeyCode.LeftArrow) || Input.GetKeyUp(KeyCode.RightArrow)) {
+        if (Input.GetKeyUp(KeyCode.A) || Input.GetKeyUp(KeyCode.D)) {
             dinoAnimate.SetBool("isRunning", false);
         }
     }
