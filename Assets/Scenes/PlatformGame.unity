@@ -1218,7 +1218,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 36.521, y: -221.8782}
+  m_AnchoredPosition: {x: -5, y: -218}
   m_SizeDelta: {x: 272.01, y: 62.6498}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &73618563
@@ -5828,7 +5828,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 36.521, y: -128.8054}
+  m_AnchoredPosition: {x: -4.999996, y: -124.9272}
   m_SizeDelta: {x: 272.01, y: 56.3893}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &437054150
@@ -12766,7 +12766,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &914007046
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13729,7 +13729,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 36.521, y: 323}
+  m_AnchoredPosition: {x: 0.39692, y: 321.33}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &934749831
@@ -14878,7 +14878,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebca87d3211e9a24d9efd9745401865a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraSpeed: 2.5
+  cameraSpeed: 2
 --- !u!82 &1012148436
 AudioSource:
   m_ObjectHideFlags: 0
@@ -26411,8 +26411,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 88.37396}
-  m_SizeDelta: {x: 911.6245, y: 351.7462}
+  m_AnchoredPosition: {x: 0.39691, y: 83}
+  m_SizeDelta: {x: 344.2582, y: 336.5294}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1705587143
 MonoBehaviour:
@@ -26434,10 +26434,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "                                     Player Controls\n        \t\t\t 
-    'A' - Left :: 'D' - Right \n                                         \n                                        
-    Resume\n                                       'Space bar'\n\n                                      
-    Quit Game\n                                              'Q'"
+  m_text: "Player Controls\n'A' - Left :: 'D' - Right \n                                        
+    \nResume\n'Space bar'\n\nQuit Game\n'Q'"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -26471,7 +26469,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
+  m_HorizontalAlignment: 2
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -30803,7 +30801,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 36.521, y: -313.797}
+  m_AnchoredPosition: {x: -4.999996, y: -309.9188}
   m_SizeDelta: {x: 272.01, y: 66.406}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2020955956
