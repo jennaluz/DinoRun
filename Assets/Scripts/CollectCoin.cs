@@ -8,7 +8,7 @@ public class CollectCoin : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D triggerItem)
     {
-       if(triggerItem.name == "TestPlayer")
+       if(triggerItem.name == "Dinosaur")
        {
         Debug.Log("Coin has been collected");
         gm.dinoScore();

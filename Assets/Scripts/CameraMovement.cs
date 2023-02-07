@@ -13,6 +13,17 @@ public class CameraMovement : MonoBehaviour
     void Start()
     {
         mainCamera = Camera.main;
+
+        //Next function is so that the camera waits for a bit before moving
+        StartCoroutine(DelayCameraMovement());   
+    }
+
+    public IEnumerator DelayCameraMovement()
+    {
+        float originalCameraSpeed = cameraSpeed;
+        cameraSpeed = 0;
+        yield return new WaitForSecondsRealtime(3);
+        cameraSpeed = originalCameraSpeed;
     }
 
     // Update is called once per frame
