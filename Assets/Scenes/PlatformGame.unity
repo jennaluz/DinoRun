@@ -11725,7 +11725,7 @@ GameObject:
   - component: {fileID: 750989119}
   m_Layer: 0
   m_Name: Boundary 5
-  m_TagString: Untagged
+  m_TagString: Gameover
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -31494,7 +31494,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6718289683669358084, guid: 545170368758d47cfb9d47c9cdf084c7, type: 3}
       propertyPath: dinoHorizontalSpeed
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6718289683669358085, guid: 545170368758d47cfb9d47c9cdf084c7, type: 3}
       propertyPath: m_Mass
@@ -34167,7 +34167,7 @@ GameObject:
   - component: {fileID: 2069267904}
   m_Layer: 0
   m_Name: Boundary 4
-  m_TagString: Untagged
+  m_TagString: Gameover
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -34180,7 +34180,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2069267902}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 118.9, y: -42.7, z: 0}
+  m_LocalPosition: {x: 118.86, y: -41.46, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
