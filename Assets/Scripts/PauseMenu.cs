@@ -21,7 +21,6 @@ public class PauseMenu : MonoBehaviour
                 Halt();
             }
         }
-
         if(Input.GetKey(KeyCode.Escape)){
             Application.Quit();
         }  
@@ -52,8 +51,8 @@ public class PauseMenu : MonoBehaviour
     {
         {
             // When 'PLAY' button is clicked it will load the game
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
-                // can also be done with 'SceneManager.LoadScene(LoadScene("MainMenu"));
+            //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+            SceneManager.LoadScene(0);
 
             //Need to figure out how to reset the camera position, and score
         }

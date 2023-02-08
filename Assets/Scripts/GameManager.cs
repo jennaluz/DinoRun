@@ -15,16 +15,4 @@ public class GameManager : MonoBehaviour
         Debug.Log(_dinoScore);
         this.dinoScoreText.text = _dinoScore.ToString();
     }
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }

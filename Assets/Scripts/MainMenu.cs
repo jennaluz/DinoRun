@@ -9,8 +9,9 @@ public class MainMenu : MonoBehaviour
     {
         {
             // When 'PLAY' button is clicked it will load the game
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-                // can also be done with 'SceneManager.LoadScene(LoadScene("platform_Game"));
+            // can also be done with 'SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);'
+            SceneManager.LoadScene(1);
+            Time.timeScale = 1f;
         }
     }
 
