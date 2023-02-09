@@ -5754,7 +5754,7 @@ GameObject:
   - component: {fileID: 400398605}
   m_Layer: 0
   m_Name: AudioController
-  m_TagString: Untagged
+  m_TagString: Manager
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5771,6 +5771,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bea7e6fd94a0777489fedab77302d591, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sounds:
+  - source: {fileID: 0}
+    clip: {fileID: 8300000, guid: a2394a1ddc19e6b4d8710939765cc3f7, type: 3}
+    name: BackgroundMusic
+    volume: 1
+    pitch: 1
+    loop: 1
+  - source: {fileID: 0}
+    clip: {fileID: 8300000, guid: 7f099ae3678e25c428cb8f34a213e36d, type: 3}
+    name: DinoJump
+    volume: 0.2
+    pitch: 1
+    loop: 0
+  - source: {fileID: 0}
+    clip: {fileID: 8300000, guid: 748bfaff907ecaa4b9ead1b20071465f, type: 3}
+    name: DinoDie
+    volume: 0.4
+    pitch: 1
+    loop: 0
 --- !u!4 &400398606
 Transform:
   m_ObjectHideFlags: 0
@@ -15961,7 +15980,7 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1012148431}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: a2394a1ddc19e6b4d8710939765cc3f7, type: 3}

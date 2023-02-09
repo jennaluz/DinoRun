@@ -9,9 +9,12 @@ public class DinosaurMovement : MonoBehaviour
     public float dinoHorizontalSpeed;
     public float dinoVerticalSpeed;
 
+    public AudioController audioController;
+
     // Start is called before the first frame update
     void Start()
     {
+        audioController = GameObject.FindGameObjectWithTag("Manager").GetComponent<AudioController>();
     }
 
     // Update is called once per frame
@@ -37,6 +40,7 @@ public class DinosaurMovement : MonoBehaviour
 
         if (Input.GetKey(KeyCode.Space)) {
             dinoAnimate.SetBool("isJumping", true);
+            audioController.Play("DinoJump");
             transform.position = transform.position + (Vector3.up * dinoVerticalSpeed) * Time.deltaTime;
         }
         
@@ -50,8 +54,8 @@ public class DinosaurMovement : MonoBehaviour
         dinoAnimate.SetBool("isJumping", false);
 
         if (collision.collider.tag == "Gameover") {
-           dinoAnimate.SetBool("isDying", true); 
-           Debug.Log("fell");
+            audioController.Play("DinoDie");
+            dinoAnimate.SetBool("isDying", true); 
         }
     }
 }
