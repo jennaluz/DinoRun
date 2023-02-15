@@ -22,7 +22,7 @@ public class CameraMovement : MonoBehaviour
     {
         float originalCameraSpeed = cameraSpeed;
         cameraSpeed = 0;
-        yield return new WaitForSecondsRealtime(3);
+        yield return new WaitForSecondsRealtime(1);
         cameraSpeed = originalCameraSpeed;
     }
 

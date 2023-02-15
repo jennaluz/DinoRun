@@ -5,14 +5,14 @@ using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
-    public TestPlayerMovement dino;
+    public DinosaurMovement dino;
 
     private int _dinoScore;
     public Text dinoScoreText;
 
     public void dinoScore(){
         _dinoScore++;
-        Debug.Log(_dinoScore);
+        Debug.Log(_dinoScore.ToString());
         this.dinoScoreText.text = _dinoScore.ToString();
     }
 }
