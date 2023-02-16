@@ -49,7 +49,7 @@ public class DinosaurMovement : MonoBehaviour
         }
     }
 
-    void OnCollisionEnter2D(Collision2D collision)
+    /*void OnCollisionEnter2D(Collision2D collision)
     {
         dinoAnimate.SetBool("isJumping", false);
 
@@ -57,5 +57,17 @@ public class DinosaurMovement : MonoBehaviour
             audioController.Play("DinoDie");
             dinoAnimate.SetBool("isDying", true); 
         }
+    }*/
+
+    public void DinoDamage()
+    {
+       audioController.Play("DinoDie"); 
+    }
+
+    public void DinoDead()
+    {
+        dinoAnimate.SetBool("isJumping", false);
+        audioController.Play("DinoDie");
+        dinoAnimate.SetBool("isDying", true);
     }
 }

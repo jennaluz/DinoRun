@@ -1,22 +1,38 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class GameOver : MonoBehaviour
 {
     public static bool isOver = false;
     public GameObject GameOverCanvas;
+    public Image healthBar;
+    public float healthAmt = 100f;
 
-    void OnCollisionEnter2D(Collision2D collision)
+    private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.collider.tag == "Gameover") {
-           Debug.Log("Game Over");
 
-            GameOverCanvas.SetActive(true);
-            Time.timeScale = 0f;
+        if (collision.collider.tag == "Gameover")
+        {
+            healthAmt -= 33.5f;
+            healthBar.fillAmount = healthAmt / 100f;
+            this.gameObject.GetComponent<DinosaurMovement>().DinoDamage();
 
-            isOver = true;
+            if (healthAmt <= 0)
+            {
+                this.gameObject.GetComponent<DinosaurMovement>().DinoDead();
+                healthAmt = 0;
+
+                Debug.Log("YOU'RE DEAD!");
+                Debug.Log("Game Over");
+
+                GameOverCanvas.SetActive(true);
+                Time.timeScale = 0f;
+
+                isOver = true;
+            }
         }
     }
 
