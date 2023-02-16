@@ -749,6 +749,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 075fe1efce0a69f4b8f0819432650307, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioController: {fileID: 0}
   gm: {fileID: 1066369231}
 --- !u!1 &31001194
 GameObject:
@@ -4677,6 +4678,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 075fe1efce0a69f4b8f0819432650307, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioController: {fileID: 0}
   gm: {fileID: 1066369231}
 --- !u!1 &335963185
 GameObject:
@@ -5787,6 +5789,12 @@ MonoBehaviour:
   - source: {fileID: 0}
     clip: {fileID: 8300000, guid: 748bfaff907ecaa4b9ead1b20071465f, type: 3}
     name: DinoDie
+    volume: 0.4
+    pitch: 1
+    loop: 0
+  - source: {fileID: 0}
+    clip: {fileID: 8300000, guid: b20eff100831827498294d4bc57c9388, type: 3}
+    name: CollectCoin
     volume: 0.4
     pitch: 1
     loop: 0
