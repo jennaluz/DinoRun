@@ -10652,7 +10652,7 @@ GameObject:
   - component: {fileID: 682416530}
   m_Layer: 0
   m_Name: Cactus A
-  m_TagString: Untagged
+  m_TagString: Gameover
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16988,7 +16988,7 @@ GameObject:
   - component: {fileID: 1064153543}
   m_Layer: 0
   m_Name: Cactus C
-  m_TagString: Untagged
+  m_TagString: Gameover
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -24396,7 +24396,7 @@ GameObject:
   - component: {fileID: 1483087669}
   m_Layer: 0
   m_Name: Cactus B
-  m_TagString: Untagged
+  m_TagString: Gameover
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
