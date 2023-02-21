@@ -13,12 +13,16 @@ public class GameOver : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-
         if (collision.collider.tag == "Gameover")
         {
-            healthAmt -= 33.5f;
-            healthBar.fillAmount = healthAmt / 100f;
-            this.gameObject.GetComponent<DinosaurMovement>().DinoDamage();
+            if (collision.collider.name.Contains("Boundary")) {
+                healthAmt = 0;
+                healthBar.fillAmount = healthAmt / 100f;
+            } else {
+                healthAmt -= 33.5f;
+                healthBar.fillAmount = healthAmt / 100f;
+                this.gameObject.GetComponent<DinosaurMovement>().DinoDamage();
+            }
 
             if (healthAmt <= 0)
             {
