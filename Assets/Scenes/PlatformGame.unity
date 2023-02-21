@@ -7416,7 +7416,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 85.5, y: -30.1}
+  m_AnchoredPosition: {x: 85.5, y: -30.099976}
   m_SizeDelta: {x: 117.7, y: 46.06021}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &468022635
@@ -10652,7 +10652,7 @@ GameObject:
   - component: {fileID: 682416530}
   m_Layer: 0
   m_Name: Cactus A
-  m_TagString: Untagged
+  m_TagString: Gameover
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16988,7 +16988,7 @@ GameObject:
   - component: {fileID: 1064153543}
   m_Layer: 0
   m_Name: Cactus C
-  m_TagString: Untagged
+  m_TagString: Gameover
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -24396,7 +24396,7 @@ GameObject:
   - component: {fileID: 1483087669}
   m_Layer: 0
   m_Name: Cactus B
-  m_TagString: Untagged
+  m_TagString: Gameover
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
